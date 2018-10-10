@@ -1,7 +1,7 @@
 
 import { NativeModules, Platform } from 'react-native';
 
-const { ReactNativeHaptic } = NativeModules;
+let { ReactNativeHaptic } = NativeModules;
 
 ReactNativeHaptic = Platform.OS === 'android' ? {generate: null}:ReactNativeHaptic
 export default ReactNativeHaptic;
